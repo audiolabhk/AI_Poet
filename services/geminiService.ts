@@ -10,7 +10,9 @@ export async function generatePoem(prompt: string, temperature: number, maxToken
       contents: prompt,
       config: {
         temperature: temperature,
-        maxOutputTokens: maxTokens
+        maxOutputTokens: maxTokens,
+        // Reserve a portion of tokens for thinking to avoid empty responses
+        thinkingConfig: { thinkingBudget: Math.floor(maxTokens * 0.25) }
       },
     });
 
