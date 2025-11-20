@@ -1,5 +1,5 @@
 
-import React, { useState, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import { ControlPanel } from './components/ControlPanel';
 import { PoemDisplay } from './components/PoemDisplay';
 import { generatePoem } from './services/geminiService';
