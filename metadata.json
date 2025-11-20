@@ -1,0 +1,5 @@
+{
+  "name": "AI Poet",
+  "description": "An application that uses AI to write haikus or sonnets based on a user-provided subject, with controls for creativity and length.",
+  "requestFramePermissions": []
+}
